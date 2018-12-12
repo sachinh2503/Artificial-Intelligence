@@ -255,16 +255,6 @@ class Grid:
                 self.final_utility_matrix = np.transpose(temp_utility)
                 break
 
-        #print(count)
-        # print(self.final_utility_matrix)
-
-        # temp = [[0 for m in range(self.grid_size)] for n in range(self.grid_size)]
-        # for i in range(self.grid_size):
-        #     for j in range(self.grid_size):
-        #         temp[i][j] = self.final_utility_matrix[j][i]
-        # self.final_utility_matrix = temp
-        #print("UTILITY: ", self.final_utility_matrix)
-
         self.policy = [[0 for m in range(self.grid_size)] for n in range(self.grid_size)]
         for i in range(self.grid_size):
             for j in range(self.grid_size):
@@ -303,6 +293,6 @@ class Grid:
 
 g1 = Grid()
 start_time = time.time()
-g1.myfunc("C://Users//sachi//OneDrive//Documents//AI//HW-3//testcases//testcases//input_test.txt")
+g1.myfunc("input.txt")
 
 print("--- %s seconds ---" % (time.time() - start_time))
