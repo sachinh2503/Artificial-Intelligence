@@ -52,33 +52,6 @@ class Grid:
                 else:
                     self.dict[temp] = 0
 
-        # print(self.main_dict)
-
-        #self.grid = [[0 for m in range(self.grid_size)] for n in range(self.grid_size)]
-        # self.grid = [[47, 44, 15, 45, 48, 49, 39, 2, 4, 13, 10, 37, 2, 42, 3], [32, 13, 17, 13, 23, 16, 40, 6, 41, 8, 31, 15, 33, 39, 19], [10, 22, 29, 29, 49, 6, 16, 48, 32, 3, 6, 16, 22, 3, 1], [41, 24, 49, 40, 45, 35, 36, 45, 1, 33, 14, 28, 43, 23, 27], [37, 45, 9, 25, 36, 28, 23, 43, 19, 9, 14, 26, 9, 44, 40], [27, 36, 25, 21, 16, 17, 50, 6, 47, 49, 4, 10, 27, 29, 19], [29, 32, 29, 37, 49, 27, 31, 44, 8, 29, 28, 30, 36, 15, 0], [5, 24, 30, 38, 13, 19, 19, 28, 47, 42, 20, 32, 25, 15, 47], [1, 25, 11, 19, 7, 45, 41, 12, 10, 14, 2, 46, 0, 44, 30], [40, 44, 5, 46, 33, 10, 30, 47, 33, 17, 49, 41, 28, 41, 23], [50, 49, 16, 25, 8, 40, 8, 6, 49, 25, 22, 44, 23, 40, 48], [7, 30, 31, 36, 16, 43, 8, 2, 44, 0, 44, 32, 21, 16, 19], [24, 23, 5, 34, 49, 4, 5, 5, 2, 48, 3, 44, 27, 29, 3], [41, 13, 27, 33, 11, 3, 30, 49, 36, 10, 45, 27, 2, 44, 23], [32, 35, 27, 23, 43, 38, 12, 45, 0, 13, 13, 32, 27, 3, 13]]
-        # for i in range(15):
-        #     for j in range(15):
-        #         temp = str(i) + "," + str(j)
-        #         self.dict[temp] = self.grid[i][j]
-        # print(self.dict)
-        # self.num_police = 1
-
-        #for i in range(self.grid_size):
-         #   for j in range(self.grid_size):
-          #      temp = str(i)+","+str(j)
-           #     self.grid_list.append(temp)
-            #    if str(temp) in self.dict.keys():
-             #       self.grid[i][j] = self.dict[str(temp)]
-              #      if self.grid[i][j] > self.max_value:
-               #         self.max_value = self.grid[i][j]
-
-        #print(self.grid)
-        #print(self.grid_list)
-
-        #if self.num_police == 1:
-         #   print(self.max_value)
-          #  output_file.write(str(self.max_value))
-           # return
         if self.grid_size == self.num_police:
             valid_cols = {i for i in range(self.grid_size)}
             tracking = [-1 for i in range(self.grid_size)]
