@@ -261,22 +261,6 @@ class Grid:
                 if schedule[i] == "1":
                     self.week_list[i][0] += 1
 
-    # def callRecur(self):
-    #     temp_list = []
-    #     temp_list = self.unallocated_applicants
-    #     for i in range(len(temp_list)):
-    #         self.max_score = max(self.max_score, self.chooseNext(temp_list, True))
-    #         print(self.max_score)
-    #         popped = temp_list.pop(0)
-    #         temp_list.append(popped)
-    #     return self.max_score
-
-        #print(self.chooseNext(self.unallocated_applicants, True))
-        # print("REMAINING PARKING SLOTS: ",self.total_parking_slots)
-        # print("REMAINING BEDS: ", self.total_beds)
-        # print("SPLA DICT: ", self.d_SPLA)
-        # print("LAHSA DICT: ", self.d_LAHSA)
-
 
     def chooseNext(self, spla, lahsa, maxPlayer):
         #print("SPLA values: ", spla)
@@ -422,30 +406,6 @@ class Grid:
 
             else:
                 return 0
-
-            # self.max_score = max(self.max_score, best_spla)
-            # pool.pop(temp)
-            # pool.append(temp)
-
-
-    # def ssum(list, sum):
-    #     current = ""
-    #     ssum_h(list, len(list), current, sum)
-    #
-    # def ssum_h(list, n, subset, sum):
-    #     if sum <= 0:
-    #         print(subset)
-    #         return
-    #
-    #     if n == 0:
-    #         return
-    #
-    #     if list[n - 1] <= sum:
-    #         ssum_h(list, n - 1, subset, sum)
-    #         ssum_h(list, n - 1, subset + repr(list[n - 1]) + " ", sum - list[n - 1])
-    #     else:
-    #         ssum_h(list, n - 1, subset, sum)
-
 
 g1 = Grid()
 start_time = time.time()
